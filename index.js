@@ -6,7 +6,16 @@ const list = fs.readdirSync(__dirname + "/projects");
 const nodemailer = require("nodemailer");
 const path = require("path");
 
-const secret = require("secrets");
+let secretEmail;
+let secretPass;
+if (process.env.DATABASE_URL) {
+    secretEmail = process.env.email;
+    secretPass = process.env.pass;
+} else {
+    const secret = require("./secrets");
+    secretEmail = `${secret.email}`;
+    secretPass = `${secret.pass}`;
+}
 
 const app = express();
 const projectList = list.map(i => {
@@ -91,13 +100,13 @@ app.post("/send", (req, res) => {
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: `${secret.email}`,
-            pass: `${secret.pass}`
+            user: `${secretEmail}`,
+            pass: `${secretPass}`
         }
     });
     const mailOptions = {
         from: `${req.body.email}`,
-        to: `${secret.email}`,
+        to: `${secretEmail}`,
         subject: 'Subject of your email',
         html: output
     };
