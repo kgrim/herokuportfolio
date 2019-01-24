@@ -1,0 +1,31 @@
+body {
+    overflow-y: hidden;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+}
+
+
+/* ////////////////////////////////////////////////// Projects //////////////////////////////////////////////////////// */
+.projectsContainer {
+    display: flex;
+    width: 85vw;
+    height: 102vh;
+    flex-flow: row;
+    overflow-y: hidden;
+}
+
+.titleInstructions {
+    width: 100%;
+    font-size: 150%;
+}
+
+.individualProject, .projectsContainer > h2 {
+    text-align: center;
+    padding: 1rem;
+    align-self: center;
+}
+
+.projectsContainer img{
+    height: 500px;
+    object-fit: cover;
+}

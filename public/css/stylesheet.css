@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+@font-face {
+    font-family: 'boldbold';
+    src: url('Cunia-webfont.eot');
+    src: url('Cunia-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Cunia-webfont.woff2') format('woff2'),
+         url('Cunia-webfont.woff') format('woff'),
+         url('Cunia-webfont.ttf') format('truetype'),
+         url('Cunia-webfont.svg#boldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+    font-family: Abel, sans-serif;
+    font-weight: lighter;
+}
+
+/* //////////////////////////////////////////////////NAV BAR//////////////////////////////////////////////////////// */
+.nav {
+    position: absolute;
+    z-index: 11;
+    right: 40px;
+    text-align: center;
+    width: 10%;
+}
+
+nav a {
+    width: 100%;
+    margin-left: 3%;
+    padding: 3%;
+    color: orange;
+    border: none;
+    font-size: 20px;
+    text-align: right;
+    background: transparent;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+
+nav a:hover {
+    font-weight: bold;
+}
+
+
+.line {
+    background: orange;
+    width: 5%;
+    height: 100vh;
+    position: absolute;
+    z-index: 11;
+    right: -15px;
+    top: -25px;
+}
+
+/* //////////////////////////////////////////////////Welcome HB//////////////////////////////////////////////////////// */
+
+
+
+#triangle-topright {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 890px solid rgb(255, 255, 255, 0.9);
+    border-left: 750px solid transparent;
+}
+#helloTitle {
+    padding-top: 150px;
+    height: 700px;
+    overflow: hidden;
+}
+
+#helloTitle p{
+    margin: 0;
+    font-family: 'boldbold';
+    font-size: 500px;
+    background: transparent;
+    color: white;
+    letter-spacing: 40px;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+#helloTitle p:last-child {
+    position: relative;
+    left: 238px;
+    top: -120px;
+    letter-spacing: 20px;
+    font-size: 385px;
+}
+
+
+@keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+@keyframes text-pop-up-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+
+/* ///////////////////////////////////////////////////////////ABOUT ME ////////////////////////// */
+.aboutMeSection {
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    width: 85%;
+}
+
+.aboutMeSection img {
+    width: 20%;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+#projectDescription {
+    margin: auto;
+    width: 85vw;
+    transform: translateY(15%);
+}
+
+#projectDescription img{
+    width: 70%;
+    object-fit: cover;
+}
+
+
+.active {
+    transform: scale(1.1);
+}
