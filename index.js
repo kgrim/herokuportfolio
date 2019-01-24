@@ -19,7 +19,7 @@ if (process.env.email) {
 
 const app = express();
 const projectList = list.map(i => {
-    const { name, desc } = require(__dirname + "/projects/" + i + "/info");
+    const { name, desc } = require(__dirname + "/projects/" + i + "/info.json");
     return {
         i,
         name,
