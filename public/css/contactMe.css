@@ -1,0 +1,113 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+    width: 85vw;
+  line-height:1.6;
+  padding:1em;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+}
+
+/* ///////////////////////////////////////////CONTACT ME///////////////////////////// */
+
+.contactMeLinksContainer {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+
+}
+
+.contactLink {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+.contactLink img {
+    width: 50%;
+}
+
+
+.active {
+    transform: scale(1.1);
+}
+
+
+
+
+
+.container{
+  max-width:1170px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em;
+}
+
+ul{
+  list-style: none;
+  padding:0;
+}
+
+
+.wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+
+.contact{
+  background: white;
+}
+
+/* FORM STYLES */
+
+.contact form label{
+  display:block;
+  margin-top: 20px;
+  font-size: 125%;
+}
+
+.contact form p{
+  margin:0;
+}
+
+
+
+.contact form button, .contact form input, .contact form textarea{
+  width:100%;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.contact form button{
+  background:#c9e6ff;
+  border:0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,.contact form button:focus{
+  background:#92bde7;
+  color:#fff;
+  outline:0;
+  transition: background-color 2s ease-out;
+}
+
+/* LARGE SCREENS */
+@media(min-width:700px){
+  .wrapper{
+  }
+
+  .wrapper > *{
+    padding:2em;
+  }
+
+  .company-info h3, .company-info ul, .brand{
+    text-align: left;
+  }
+}
