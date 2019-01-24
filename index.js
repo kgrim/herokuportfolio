@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser")
 const hb = require("express-handlebars");
 const fs = require("fs");
-const list = fs.readdirSync(__dirname + "\\projects");
+const list = fs.readdirSync(__dirname + "/projects");
 const nodemailer = require("nodemailer");
 const path = require("path");
 
