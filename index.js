@@ -8,7 +8,7 @@ const path = require("path");
 
 let secretEmail;
 let secretPass;
-if (process.env.DATABASE_URL) {
+if (process.env.email) {
     secretEmail = process.env.email;
     secretPass = process.env.pass;
 } else {
