@@ -6,11 +6,11 @@ const list = fs.readdirSync(__dirname + "/projects");
 const nodemailer = require("nodemailer");
 const path = require("path");
 
-const secret = require("./secrets");
+const secret = require("secrets");
 
 const app = express();
 const projectList = list.map(i => {
-    const { name, desc } = require(__dirname + "\\projects\\" + i + "\\info");
+    const { name, desc } = require(__dirname + "/projects/" + i + "/info");
     return {
         i,
         name,
