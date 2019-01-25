@@ -48,3 +48,54 @@ body {
     left: 21%;
     top: -10%;
 }
+
+
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    body {
+        background-position: top;
+        background-size: 100vh;
+    }
+    #bigContainer {
+        width: 92vw;
+        left: 3vw;
+    }
+
+    .nav a {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+        font-size: 3.5rem;
+        margin: 2%;
+        transform: none;
+        position: inherit;
+        border-radius: 0;
+        display: block;
+        top: 20%;
+        background: transparent;
+        font-weight: bold;
+    }
+    .nav {
+        width: 40%;
+        transform: translate(450px, 700px);
+        border-radius: 30px 5px;
+        background: white;
+        position: relative;
+        z-index: 10;
+        box-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav a:hover,
+    .nav a:active {
+        font-size: 4.5rem;
+        background: transparent;
+    }
+
+    #helloTitle p:last-child {
+        font-size: 19rem;
+        left: 23%;
+        top: -6%;
+    }
+
+}

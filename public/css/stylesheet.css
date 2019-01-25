@@ -34,6 +34,7 @@ nav a {
     z-index: 2;
     border-radius: 30px 5px;
     text-decoration: none;
+    font-variant: all-small-caps;
 
 }
 
