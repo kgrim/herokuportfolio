@@ -21,79 +21,64 @@
 
 /* //////////////////////////////////////////////////NAV BAR//////////////////////////////////////////////////////// */
 .nav {
-    position: absolute;
-    z-index: 11;
-    right: 40px;
     text-align: center;
-    width: 10%;
 }
 
 nav a {
-    width: 100%;
-    margin-left: 3%;
-    padding: 3%;
-    color: orange;
-    border: none;
-    font-size: 20px;
-    text-align: right;
-    background: transparent;
-    display: block;
-    position: relative;
-    z-index: 10;
+    width: 10vw;
+    height: 5vh;
+    position: fixed;
+    background: white;
+    color: darkorange;
+    font-size: 3.5rem;
+    z-index: 2;
+    border-radius: 80px 10px;
+    text-decoration: none;
+
 }
+
+.homeNav {
+    left: 45vw;
+    top: -2vh;
+    padding-top: 2%;
+
+}
+
+.projectsNav {
+    top: 92vh;
+    left: 45vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+.contactMeNav {
+
+
+    top: 45vh;
+    right: -6%;
+    transform: rotate(90deg);
+    padding-top: 6%;
+}
+
+.aboutMeNav {
+    top: 45vh;
+    left: -6%;
+    transform: rotate(-90deg);
+    padding-top: 6%;
+
+}
+
 
 
 nav a:hover {
     font-weight: bold;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 4rem;
 }
 
 
-.line {
-    background: orange;
-    width: 5%;
-    height: 100vh;
-    position: absolute;
-    z-index: 11;
-    right: -15px;
-    top: -25px;
-}
 
-/* //////////////////////////////////////////////////Welcome HB//////////////////////////////////////////////////////// */
-
-
-
-#triangle-topright {
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-top: 890px solid rgb(255, 255, 255, 0.9);
-    border-left: 750px solid transparent;
-}
-#helloTitle {
-    padding-top: 150px;
-    height: 700px;
-    overflow: hidden;
-}
-
-#helloTitle p{
-    margin: 0;
-    font-family: 'boldbold';
-    font-size: 500px;
-    background: transparent;
-    color: white;
-    letter-spacing: 40px;
-    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-}
-
-#helloTitle p:last-child {
-    position: relative;
-    left: 238px;
-    top: -120px;
-    letter-spacing: 20px;
-    font-size: 385px;
-}
 
 
 @keyframes bounce-in-top {

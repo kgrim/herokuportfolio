@@ -1,6 +1,7 @@
 body {
     overflow-y: hidden;
     animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    width: 85vw;
 
 }
 
@@ -8,7 +9,7 @@ body {
 /* ////////////////////////////////////////////////// Projects //////////////////////////////////////////////////////// */
 .projectsContainer {
     display: flex;
-    width: 85vw;
+    width: 100%;
     height: 102vh;
     flex-flow: row;
     overflow-y: hidden;
@@ -17,6 +18,10 @@ body {
 .titleInstructions {
     width: 100%;
     font-size: 150%;
+}
+
+.titleInstructions h2 {
+    color: green;
 }
 
 .individualProject, .projectsContainer > h2 {
@@ -28,4 +33,12 @@ body {
 .projectsContainer img{
     height: 500px;
     object-fit: cover;
+}
+
+.fontStyle {
+    font-size: 150%;
+}
+
+#linksList img{
+    width: 2%;
 }

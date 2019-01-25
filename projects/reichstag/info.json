@@ -1,4 +1,6 @@
 {
-    "name": "Reichtag",
-    "desc": "Registry"
+    "name": "Basic Website",
+    "tech" : "jQuery",
+    "desc": "I was provided an image in which I had to replicate the website that included a message pop-up and menu. This was my initial project",
+    "web" : {}
 }

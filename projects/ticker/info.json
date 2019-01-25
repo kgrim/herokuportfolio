@@ -1,4 +1,8 @@
 {
     "name": "Ticker",
-    "desc": "words"
+    "tech" : "jQuery",
+    "desc": "'a' tags moving across the screen until in a cirle. It is mostly seen at the end of the screen on news channels.",
+    "web" : {
+        "codePen" : "https://codepen.io/kgrim/pen/jQEdNd"
+    }
 }

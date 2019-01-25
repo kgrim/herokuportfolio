@@ -1,5 +1,4 @@
 var hammenu = document.getElementById("hammenu");
-console.log(hammenu);
 hammenu.addEventListener("click", function(e) {
     e.stopPropagation();
     document.body.classList.add("menu-on");
@@ -22,12 +21,12 @@ bar.addEventListener("click", function(e) {
     e.stopPropagation();
 });
 
-setTimeout(function() {
-    $(document.body).addClass("welcome-on");
-}, 1000);
+
+var welcome = $(document.body).addClass("welcome-on");
+
 
 var off = $(".exit2");
 off.on("click", function(e) {
-    e.stopPropagation();
+    e.preventDefault();
     $(document.body).removeClass("welcome-on");
 });
