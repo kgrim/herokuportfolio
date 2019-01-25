@@ -1,0 +1,6 @@
+{
+    "name": "Earth",
+    "tech" : "Three js",
+    "desc": "Take a step outside the world to view the earth while the moon is orbiting around it. One can simply rotate the scene by the click+drag action.",
+    "web" : {}
+}

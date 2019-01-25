@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#car {
+    border: 1px solid black;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /* height: 100%;
+    width: 100%; */
+}
+
+#car img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: translateX(100%);
+    transition-property: transform;
+    transition-duration: 0s;
+}
+
+#car img.onscreen {
+    transform: translateX(0);
+    transition-duration: 1s;
+}
+
+#car img.exit {
+    transform: translateX(-100%);
+    transition-duration: 1s;
+}
+
+#dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.dot {
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.active {
+    background: white;
+}
