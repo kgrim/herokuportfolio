@@ -1,8 +1,0 @@
-{
-    "name": "Image Carousel",
-    "tech" : "vanilla Javascript",
-    "desc": "A section where is automatically rotates a set of pictures. You can select the slide by clicking on the dots below.",
-    "web" : {
-        "codePen" : "https://codepen.io/kgrim/pen/ZwbdME"
-    }
-}
