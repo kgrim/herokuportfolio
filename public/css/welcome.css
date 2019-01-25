@@ -11,7 +11,7 @@ body {
 #bigContainer {
     width: 95vw;
     height: 90vh;
-    border: 1rem solid white;
+    border: 5px solid white;
     background: transparent;
     position: fixed;
     top: 4.25vh;
@@ -35,7 +35,7 @@ body {
 #helloTitle p{
     margin: 0;
     font-family: 'boldbold';
-    font-size: 60rem;
+    font-size: 25rem;
     background: transparent;
     color: white;
     letter-spacing: .1em;
@@ -43,8 +43,8 @@ body {
 
 #helloTitle p:last-child {
     letter-spacing: -.01em;
-    font-size: 55rem;
+    font-size: 20rem;
     position: relative;
-    left: 16%;
+    left: 21%;
     top: -10%;
 }

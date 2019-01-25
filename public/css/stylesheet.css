@@ -30,22 +30,22 @@ nav a {
     position: fixed;
     background: white;
     color: darkorange;
-    font-size: 3.5rem;
+    font-size: 1rem;
     z-index: 2;
-    border-radius: 80px 10px;
+    border-radius: 30px 5px;
     text-decoration: none;
 
 }
 
 .homeNav {
     left: 45vw;
-    top: -2vh;
-    padding-top: 2%;
+    top: -3.5vh;
+    padding-top: 3%;
 
 }
 
 .projectsNav {
-    top: 92vh;
+    top: 92.5vh;
     left: 45vw;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -53,10 +53,8 @@ nav a {
 }
 
 .contactMeNav {
-
-
     top: 45vh;
-    right: -6%;
+    right: -5.5%;
     transform: rotate(90deg);
     padding-top: 6%;
 }
@@ -66,6 +64,7 @@ nav a {
     left: -6%;
     transform: rotate(-90deg);
     padding-top: 6%;
+    padding-bottom: 0;
 
 }
 
@@ -74,7 +73,7 @@ nav a {
 nav a:hover {
     font-weight: bold;
     background: rgba(255, 255, 255, 0.8);
-    font-size: 4rem;
+    font-size: 1.1rem;
 }
 
 
