@@ -1,4 +1,9 @@
 {
-    "name": "kitty c",
-    "desc": "cats"
+    "name": "Lots of Love...",
+    "tech" : "jQuery",
+    "desc": "When the user clicks on the envelope, the animation is removed and the envelope gets bigger. If the envelope flap is clicked, it would open the envelope and a piece of paper would slide for the user to type on it.",
+    "web" : {
+        "codePen" : "https://codepen.io/kgrim/pen/LMoLbY",
+        "gitHub"  : "https://github.com/kgrim/portfolio/tree/master/otherexamples/envelopenote"
+    }
 }

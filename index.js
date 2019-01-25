@@ -19,11 +19,13 @@ if (process.env.email) {
 
 const app = express();
 const projectList = list.map(i => {
-    const { name, desc } = require(__dirname + "/projects/" + i + "/info");
+    const { name, tech, desc, web } = require(__dirname + "/projects/" + i + "/info");
     return {
         i,
         name,
-        desc
+        tech,
+        desc,
+        web
     };
 });
 
@@ -62,12 +64,18 @@ app.get("/projects", (req, res) => {
 
 app.get("/projects/:projName/description", (req, res) => {
     let projName = req.params.projName;
+    let tempProjList;
+    let test = projectList.map(x => {
+        if (projName == x.i) {
+            tempProjList = x;
+            }
+        });
+        console.log('test ' + tempProjList.name);
+        res.render("desc", {
+            layout: "main",
+            tempProjList
+        });
 
-    res.render("desc", {
-        layout: "main",
-        projectList,
-        projName
-    });
 });
 
 

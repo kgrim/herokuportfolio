@@ -1,5 +1,16 @@
 <div id="projectDescription">
-    <a href="/{{projName}}"><img src="/{{projName}}/shot.png" alt="">
-        <h3> {{projName}}</h3></a><br />
-        <h5> {{projName}}</h5></a>
+    <a href="/{{tempProjList.i}}"><img src="/{{tempProjList.i}}/shot.png" alt="">
+        <h3>{{tempProjList.name}}</h3></a>
+        <h4><u>Tech:</u> {{tempProjList.tech}}</h4>
+        <h4><u>Description:</u> {{tempProjList.desc}}</h4>
+        {{#if tempProjList.web.codePen}}
+            <a href="{{tempProjList.web.codePen}}"> <img src="/codepen.png" alt="codePen"> </a>
+        {{/if}}
+        {{#if tempProjList.web.gitHub}}
+            <a href="{{tempProjList.web.github}}"> <img src="/github.png" alt="github"> </a>
+        {{/if}}
+        {{#if tempProjList.web.website}}
+        <a href="{{tempProjList.web.codePen}}"> <img src="/website.png" alt="website"> </a>
+        {{/if}}
+
 </div>

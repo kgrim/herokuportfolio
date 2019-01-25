@@ -1,4 +1,9 @@
 {
-    "name": "kitty c",
-    "desc": "cats"
+    "name": "Cubic Town",
+    "tech" : "CSS",
+    "desc": "To test myself, I decided to create a 3D feel by using only the basics. Divs were created in HTML and the shadows/depth perceptive were created using CSS.",
+    "web" : {
+        "codePen" : "https://codepen.io/kgrim/pen/LqYgvj",
+        "gitHub"  : "https://github.com/kgrim/portfolio/tree/master/otherexamples/boxbackground"
+    }
 }
