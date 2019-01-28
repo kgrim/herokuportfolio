@@ -1,24 +1,192 @@
+<link rel="stylesheet" href="/css/contactMe.css">
+
 <style media="screen">
-    .line {
-        background: hotpink;
+
+    body {
+        overflow: scroll;
+        padding: 0;
+        margin: 0;
     }
 
-    .nav a, .nav button {
-        color: hotpink;
-        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    #sentMsg {
+        position: absolute;
+        z-index: 50;
+        left: 50vw;
+        color: white;
+        font-weight: bold;
+        font-family: 'boldbold';
+        color: white;
+        text-shadow: 0px 0px 4px black;
+        font-size: 2rem;
     }
+
+    .backgroundImageSlash, .backgroundImageSlashb {
+        width: 25vw;
+        height: 100vh;
+        background-image: url(/homeBackground.jpg);
+        background-position: center;
+        position: fixed;
+        right: 0;
+        top: 0;
+
+    }
+
+    .backgroundImageSlashb {
+        right: 25vw;
+        top: 0;
+    }
+
+    .aboutMe {
+        width:60vw;
+        background-position: top;
+        padding: 1rem;
+        border-radius: 3px;
+        color: darkorange;
+        font-size: 1.4rem;
+        position: relative;
+        top: 2rem;
+        left: 15rem;
+        text-shadow: 0px 0px 1px #8B4513;
+
+    }
+
+    .aboutMe > p {
+        font-size: 1.4rem;
+    }
+
+    .aboutMeSection img{
+        position: fixed;
+    }
+
+    .aboutMeLinks {
+        width: 10vw;
+        position: absolute;
+        z-index: 4;
+        top: 0;
+        left: 3%;
+        text-align: center;
+        color: darkorange;
+        transition: all .25s cubic-bezier(0.4, 0.21, 0.38, 0.8);
+
+    }
+
+    .aboutMeLinks a {
+        color: darkorange;
+    }
+
+    .aboutMeLinks img {
+        width: 5rem;
+    }
+
+    .aboutMeLinks img:hover {
+        transform: scale(1.1);
+    }
+
+    .backgroundFrame, .backgroundFrame2  {
+        width: 200px;
+        height: 200px;
+        border: 2px solid rgb(236, 142, 19);
+        position: absolute;
+        z-index: 3;
+        left: 0;
+        top: 0;
+        transition: all .5s ease-in-out;
+
+    }
+
+    .backgroundFrame2 {
+        transition: all .7s ease-in-out;
+    }
+
+
+    .contactForm {
+        position: relative;
+        z-index: 5;
+        top: 25vh;
+    }
+
+    #p1 {
+        position: relative;
+        background: linear-gradient(rgb(255, 255, 255) , rgb(255, 255, 255, .9));
+    }
+
+    #p2 {
+        position: relative;
+        background: linear-gradient( rgb(255, 255, 255, .9), rgb(255, 255, 255, .8) , rgb(255, 255, 255, .7));
+    }
+
+    #p3 {
+        position: relative;
+        background: linear-gradient(rgb(255, 255, 255, .7), rgb(255, 255, 255, .6) , rgb(255, 255, 255, .5));
+
+    }
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    * p {
+        font-size: 1.4rem;
+    }
+
+    body {
+        padding-left : 10.5rem;
+    }
+    .aboutMe {
+        top: -1rem;
+        left: 1rem;
+        width: 80vw;
+
+    }
+
+
+    .contact > * {
+        font-size: 5rem;
+    }
+
+    .contact label {
+        font-size: 3rem;
+    }
+}
+
 </style>
 
-<div class="aboutMeSection">
-    <h1>Hello, it's K!</h1>
 
-    <p>Every website has a vision and a mission however this is not always achieved. I am the person that can help to make this happen. How? As you can see from my profile I have both Design & Web Development background with a rich history in customer care & communication. This means that I would be able to develop a functioning website using Javascript yet still make it aesthetically pleasing by capturing the motive of the brand.
+    {{> navigation}}
 
-        Saying that, I consider myself as a quick learner and always am happy to learn new things.
 
-        If you would like to know more, please checkout my CV & my Github repository.</p>
+<h2 id="sentMsg">{{msg}}</h2>
+<div class="backgroundImageSlash">
 
-    <img id="candyImg" src="https://images.pexels.com/photos/827066/pexels-photo-827066.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-    <img id="plantImg" src="https://images.pexels.com/photos/797793/pexels-photo-797793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-    <img id="waterImg" src="https://images.pexels.com/photos/1426718/pexels-photo-1426718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
 </div>
+<div class="backgroundImageSlashb">
+
+</div>
+
+<div class="backgroundFrame2">
+
+</div>
+<div class="aboutMeLinks">
+    {{> contactLinks}}
+</div>
+
+<div class="backgroundFrame">
+
+</div>
+<div class="aboutMeSection">
+
+    <div class="aboutMe">
+        <h1>Hello, it's K!</h1>
+
+        <p id="p1">Every website has a vision and a mission however this is not always achieved. I am the person that can help to make this happen. How? As you can see from my profile I have both Design & Web Development background with a rich history in customer care & communication. This means that I would be able to develop a functioning website using Javascript yet still make it aesthetically pleasing by capturing the motive of the brand.</p>
+
+        <p id="p2">I'm a full stack web developer with expertise in HTML, CSS, Javascript and have experience using React, Redux, Vue, Node, Express, Handlebars, APIs, jQuery, Sockets and SQL. I also have used extensively CAD programs such as Photoshop & Illustrator.</p>
+
+        <p id="p3"> Saying that, I consider myself as a quick learner and always am happy to learn new things. If you'd like to know more about me & my work, just click on the links that can be found on the left hand side or just get it touch by clicking on the @ icon!</p>
+    </div>
+
+</div>
+
+    {{> email }}
+
+<div class="backgroundImagehorizontal">
+</div>
+
+<script src="js/aboutMeScript.js" charset="utf-8"></script>

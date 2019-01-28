@@ -1,0 +1,79 @@
+<style media="screen">
+
+    p {
+        font-size: 2rem;
+        margin: .5rem;
+
+    }
+
+    .bigProjDesc h5 {
+        animation: tracking-in-expand 1s .25s both;
+        font-family: 'boldbold';
+        color: white;
+        text-shadow: 0px 0px 6px #713e00;
+        margin: 0;
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+
+    .bigProject .h1 {
+        display: flex;
+        width: 85vw;
+    }
+    .bigProjIndividual > img {
+        width: 20rem;
+    }
+
+    .bigProjIndividual {
+        width: 100%;
+    }
+
+    .bigProjDesc img {
+        width: 4rem;
+    }
+
+    .bigProjDesc {
+        display: none;
+
+    }
+
+    .bigProjDesc p {
+        background: white;
+    }
+
+    .bigProjDesc.is--visible {
+        display: inline;
+    }
+
+    .bigProjIndividual > img:hover {
+        filter: grayscale(0);
+        transform: scale(1.2);
+    }
+
+    .bpTitle {
+        font-weight: bold;
+        color: inherit;
+        background: rgb(255, 255, 255, 0);
+
+    }
+
+
+</style>
+
+
+{{#each bigProjectList}}
+    <div class="bigProjIndividual">
+        <img src="{{image}}" alt="">
+        <div class="bigProjDesc">
+            <h5>{{name}}</h5>
+            <p><u>Tech</u>: {{tech}}</p>
+            <p><u>Description</u>: {{desc}}</p>
+            {{#if web.gitHub}}
+            <a href="{{web.github}}"target="_blank"> <img src="/github.png" alt="github"> </a>
+            {{/if}}
+            {{#if web.website}}
+            <a href="{{web.website}}"target="_blank"> <img src="/website.png" alt="github"> </a>
+            {{/if}}
+        </div>
+    </div>
+{{/each}}

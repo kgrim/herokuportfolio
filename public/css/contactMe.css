@@ -3,31 +3,19 @@
 }
 
 body{
-    width: 85vw;
-  line-height:1.6;
-  padding:1em;
-  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    line-height: 1.6;
+    padding: 8em;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    margin: 0 auto;
+    /* font-size: 120%; */
 
 }
 
 /* ///////////////////////////////////////////CONTACT ME///////////////////////////// */
 
-.contactMeLinksContainer {
-    display: flex;
-    justify-content: center;
-    width: 85%;
 
-}
-
-.contactLink {
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-}
-.contactLink img {
-    width: 50%;
+.contactLink p {
+    margin: 0;
 }
 
 
@@ -37,23 +25,27 @@ body{
 
 
 
-
-
 .container{
-  max-width:1170px;
-  margin-left:auto;
-  margin-right:auto;
-  padding:1em;
+    position: relative;
+    top: -10rem;
+  width : 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
 }
 
 ul{
   list-style: none;
-  padding:0;
+  padding: 0;
 }
 
 
 .wrapper{
-  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+    position: relative;
+    top: 25vh;
+  visibility: hidden;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
 }
 
 .wrapper > *{
@@ -62,52 +54,64 @@ ul{
 
 
 .contact{
-  background: white;
+  background: linear-gradient(rgb(255, 255, 255) , rgb(255, 255, 255, .9) , rgb(255, 255, 255, .5));
 }
 
-/* FORM STYLES */
 
 .contact form label{
-  display:block;
-  margin-top: 20px;
-  font-size: 125%;
+  display: block;
+  margin-top: 10px;
+  font-size: 2rem;
+  text-align: left;
 }
 
+
+
 .contact form p{
-  margin:0;
+  margin: 0;
 }
 
 
 
 .contact form button, .contact form input, .contact form textarea{
-  width:100%;
+  width: 100%;
   border: none;
   border-bottom: 1px solid grey;
+  background: transparent;
+  font-size: 3rem;
 }
 
 .contact form button{
-  background:#c9e6ff;
-  border:0;
+  background: grey;
+  color: white;
+  border: 0;
   text-transform: uppercase;
 }
 
 .contact form button:hover,.contact form button:focus{
-  background:#92bde7;
-  color:#fff;
-  outline:0;
+  background: darkorange;
+  color: #fff;
+  outline: 0;
   transition: background-color 2s ease-out;
 }
 
-/* LARGE SCREENS */
-@media(min-width:700px){
-  .wrapper{
-  }
 
-  .wrapper > *{
-    padding:2em;
-  }
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    body {
+        padding: 4em;
+        font-size: 150%;
+    }
+    #contactIntro {
+        font-size: 140%;
+    }
+    .contact form label {
+    }
 
-  .company-info h3, .company-info ul, .brand{
-    text-align: left;
-  }
+    .contact form button {
+        font-size: 3rem;
+    }
+
+    .container {
+        top: -20rem;
+    }
 }

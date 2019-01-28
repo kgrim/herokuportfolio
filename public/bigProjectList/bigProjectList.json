@@ -1,0 +1,54 @@
+{
+    "WeatherApp": {
+        "image" : "/bigProjectList/weatherapp.png",
+        "name" : "Weather Finder",
+        "tech" : "React",
+        "desc" : "Creating a simple weather app to further my skills with API and React.",
+        "web" : {
+            "gitHub" : "https://github.com/kgrim/portfolio/tree/master/otherexamples/weatherapp"
+        }
+
+    },
+    "Petition": {
+        "image" : "/bigProjectList/petition.png",
+        "name" : "Tiny Foods",
+        "tech" : "Express Handlebars & PSQL",
+        "desc" : "as this was the first full-stack project, there was a lot to learn. There is a log-in/sign-up function in which the password is hashed and it would save the log-in in a cookie session. Once the user sign-up, they would be directed to the edit profile, where couple of personal questions are asked (this is not mandatory and can be edited later on). If the user did not log-out it will automatically direct the user to either sign the petition using the canvas feature or to the thank you page. From the thank you page, the user is able to edit the profile, delete the signature or to check out who else signed the petition. The petitioners page can also be filtered by clicking on the city or access the other users personal URL/website by clicking on the users' name.",
+        "web" : {
+            "website" : "https://spiced-sesame.herokuapp.com/",
+            "gitHub" : "https://github.com/kgrim/portfolio/tree/master/petition"
+        }
+
+    },
+    "SocialNetwork": {
+        "image" : "/bigProjectList/socialnetwork.png",
+        "name" : "frenemy",
+        "tech" : "React, Redux, Sockets & Aws3",
+        "desc" : "there is a log-in/sign-up function in which the password is hashed and it would save the log-in in a cookie session. Once the user sign-up, they would be directed to their profile where they can add an image and edit the bio. Once the user log-in a notice is emitted to the other online users using sockets.io. Sockets are also used when the users disconnects and whenever the user has an updated in regards the friendship status (yes, even if someone declined a friend request or unfriend you -- villains like drama). The chat function will send an axios request to the server to get the latest 10 chats. The friendship button will change as soon as it is clicked and the database is updated accordingly. All the images have a click event. If you are clicking on your image, a pop-up modal will be displayed to change your image. If you are clicking on some other user image, it will direct you to their profile.",
+        "web" : {
+            "gitHub" : "https://github.com/kgrim/portfolio/tree/master/socialnetwork"
+        }
+
+    },
+    "ImageBoard": {
+        "image" : "/bigProjectList/imageboard.png",
+        "name" : "Inspire",
+        "tech" : "Vue & Aws3",
+        "desc" : "learning how to incorporate file uploader function and the instant comment function. It also have a more button at the bottom which will disappear if there are less than 8 pictures left in the database. Once the image is clicked there will be a pop-up modal that will display the enlarged image and comment function. Once the modal is up, the URL can be shared and the user would be directed to the correct image.",
+        "web" : {
+            "gitHub" : "https://github.com/kgrim/portfolio/tree/master/imageboard"
+        }
+
+    },
+    "Final": {
+        "image" : "/bigProjectList/final.png",
+        "name" : "Super Spiced Bro",
+        "tech" : "Phaser",
+        "desc" : "This is an up to 4 player fighting game where the players have kick each other off the screen while keeping their lives. Each player has 8 lives and they will not respawn once they are up however can enjoy the rest of the gameplay. The user must hit the 'A' button for a punch and 'D' button for a kick. Every player has a double jump by hitting the 'UP' button twice. Sockets are used in order for the other users to receive the information that would be emitted in real time.",
+        "web" : {
+            "website" : "http://super-spiced-brothers.herokuapp.com/",
+            "gitHub" : "https://github.com/kgrim/portfolio/tree/master/final"
+        }
+
+    }
+}

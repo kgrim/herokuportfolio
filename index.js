@@ -29,6 +29,8 @@ const projectList = list.map(i => {
     };
 });
 
+const bigProjectList = require(__dirname + "/public/bigProjectList/bigProjectList.json")
+
  // View engine setup
 app.engine("handlebars", hb());
 app.set("view engine", "handlebars");
@@ -58,7 +60,8 @@ app.get("/", (req, res) => {
 app.get("/projects", (req, res) => {
     res.render("projects", {
         layout: "main",
-        projectList
+        projectList,
+        bigProjectList
     });
 });
 
@@ -70,7 +73,6 @@ app.get("/projects/:projName/description", (req, res) => {
             tempProjList = x;
             }
         });
-        console.log('test ' + tempProjList.name);
         res.render("desc", {
             layout: "main",
             tempProjList
@@ -85,11 +87,6 @@ app.get("/aboutMe", (req, res) => {
     })
 })
 
-app.get("/contactMe", (req, res) => {
-    res.render("contactMe", {
-        layout: "main"
-    })
-})
 
 
 app.post("/send", (req, res) => {
@@ -124,7 +121,7 @@ app.post("/send", (req, res) => {
         else
             console.log(info);
     });
-    res.render("contactMe", {msg: "Email has been sent!"})
+    res.render("aboutMe", {msg: "Thank you, the Email is on it's way to me!"})
 })
 
 app.get("*", function(req, res) {

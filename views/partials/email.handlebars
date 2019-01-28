@@ -4,12 +4,10 @@
   <div class="container">
     <div class="wrapper animated bounceInLeft">
       <div class="contact">
-        <h2>Come Say <u>Hello</u></h2>
-        {{msg}}
         <form method="POST" action="send">
           <p>
             <label>Name</label>
-            <input type="text" name="name">
+            <input type="text" name="name" required="required">
           </p>
           <p>
             <label>Company</label>
@@ -17,7 +15,7 @@
           </p>
           <p>
             <label>Email Address</label>
-            <input type="email" name="email">
+            <input type="email" name="email" required="required">
           </p>
           <p>
             <label>Phone Number</label>
