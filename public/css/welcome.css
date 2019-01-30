@@ -1,21 +1,26 @@
-body {
+.imgContainer {
     animation: bounce-in-top 1.1s both;
     margin: 0;
-    background: ivory;
     background-image: url(/homeBackground.jpg);
     background-size: 100%;
     overflow: hidden;
+    height: 100vh;
+    margin: 0 auto;
+
 }
 
 .navIcons {
+    height: fit-content;
+    width: min-content;
+    margin: auto;
     position: relative;
-    z-index: 20;
-    top: 70vh;
-    left: 70vw;
 }
 
 .navIcons img {
     transition: all .25s ease-in-out;
+    width: 10rem;
+    transform: translate(-2vw, -5vh);
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 }
 
 .navIcons img:hover {
@@ -24,101 +29,67 @@ body {
 }
 
 #bigContainer {
-    width: 95vw;
-    height: 90vh;
-    border: 5px solid white;
+    border-top: 10px solid white;
     background: transparent;
     position: fixed;
     top: 4.25vh;
     left: 2vw;
+    width: 93vw;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.welcomeHB {
-    width: 70vw;
-    height: 70vh;
-    padding-left: 5%;
-    padding-top: 1%;
-}
 
 #helloTitle {
-    width: 80%;
-    height: 70vh;
     animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-    padding-top: 8%;
+    height: fit-content;
 }
 
 #helloTitle p{
     margin: 0;
     font-family: 'boldbold';
-    font-size: 25rem;
+    font-size: 5rem;
     background: transparent;
     color: white;
-    letter-spacing: .1em;
 }
 
 #helloTitle p:last-child {
-    letter-spacing: -.01em;
-    font-size: 20rem;
+    font-size: 5rem;
     position: relative;
-    left: 21%;
-    top: -10%;
+    letter-spacing: -20px;
 }
 
 
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
-    body {
-        padding-top: 2rem;
-        background-size: 150vh;
-        background-repeat: no-repeat;
-        overflow: visible;
-        width: 100vw;
-        overflow-x: hidden;
+@media only screen and (min-width: 800px)  {
+    .welcomeHB {
+        margin-top: 10vh;
+    }
+    #helloTitle p {
+        font-size: 25rem;
+    }
+    #helloTitle p:last-child {
+        font-size: 20rem;
+    }
+    .navIcons img {
+        width: 20vw;
+    }
+}
 
+
+@media only screen and (min-width: 1024px)  {
+    p {
+        animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+    }
+    .navIcons{
+
+    }
+    .navIcons img {
+        width: 15vw;
     }
     #bigContainer {
-        width: 90%;
-        height: 64vh;
-        border: 0;
-        padding: 0;
-        padding-top: 10rem;
+        flex-direction: row;
     }
-
-    #line, #line2 {
-        position: absolute;
-        top: 10vh;
-        height: 1rem;
-        width: 120rem;
-        background: white;
-        animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-    }
-
-    #line2 {
-        top: 150rem;
-    }
-    .welcomeHB {
-        padding: 0;
-    }
-
-    #helloTitle p {
-        font-size: 49rem;
-        margin: 0;
-    }
-
-
-    #helloTitle p:last-child {
-        font-size: 32rem;
-        top: -10%;
-    }
-
-    .navIcons {
-        top: 100rem;
-        right: -1rem;
-    }
-
-    .navIcons img {
-        width: 19rem;
-        animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-    }
-
 }
