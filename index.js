@@ -79,6 +79,19 @@ app.get("/projects/:projName/description", (req, res) => {
         });
 
 });
+app.get("/projects/:projId/bigProjectdescription", (req, res) => {
+    let projId = req.params.projId;
+    let tempBigProjList;
+    for (let key in bigProjectList) {
+        if (bigProjectList[key].id == projId) {
+            tempBigProjList = bigProjectList[key];
+        }
+    }
+        res.render("bigProjDesc", {
+            layout: "main",
+            tempBigProjList
+        });
+});
 
 
 app.get("/aboutMe", (req, res) => {

@@ -2,9 +2,6 @@
 
 // EVENT LISTENER FOR /PROJECTS
 const projectSlide = document.querySelector('.smallProjContainter');
-const imgList = document.querySelectorAll('.bigProjIndividual > img');
-const imgArray = Array.from(imgList);
-const className = 'is--visible';
 const backgroundImageSlash2 = document.querySelector('.backgroundImageSlash2')
 
 
@@ -13,34 +10,6 @@ let isDown = false
 let startX;
 let scrollLeft;
 
-window.addEventListener('scroll', parallex);
-
-
-
-
-
-
-function parallex() {
-	ypos = window.pageYOffset;
-    backgroundImageSlash2.style.borderRadius = ypos * .7 + '%';
-}
-
-const toggle = node => () => {
-  let desc = node.nextElementSibling;
-  if (desc) {
-    desc.classList.toggle(className);
-  }
-}
-
-imgArray.forEach(img => {
-  img.addEventListener('click', toggle(img));
-});
-
-
-
-
-
-
 
 projectSlide.addEventListener('mousedown', (e) => {
     e.preventDefault();
@@ -48,10 +17,12 @@ projectSlide.addEventListener('mousedown', (e) => {
     projectSlide.classList.add('active');
     startX = e.pageX - projectSlide.offsetLeft;
     scrollLeft = projectSlide.scrollLeft;
+	backgroundImageSlash2.style.borderRadius = '50%';
 })
 projectSlide.addEventListener('mouseleave', () => {
     isDown = false;
     projectSlide.classList.remove('active');
+	backgroundImageSlash2.style.borderRadius = '0%';
 
 })
 projectSlide.addEventListener('mouseup', () => {
@@ -73,15 +44,12 @@ projectSlide.addEventListener('scroll', (e) => {
 })
 projectSlide.addEventListener('touchstart', (e) => {
     projectSlide.classList.add('active');
+	backgroundImageSlash2.style.borderRadius = '50%';
 })
 projectSlide.addEventListener('touchmove', (e) => {
     projectSlide.classList.remove('active');
 })
-
-
-
-
-
-
-
-// EVENT LISTENER ON SCROLL
+projectSlide.addEventListener('touchend', (e) => {
+    projectSlide.classList.remove('active');
+	backgroundImageSlash2.style.borderRadius = '0%';
+})

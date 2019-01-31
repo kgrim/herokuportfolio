@@ -1,5 +1,6 @@
 {
     "WeatherApp": {
+        "id": "1",
         "image" : "/bigProjectList/weatherapp.png",
         "name" : "Weather Finder",
         "tech" : "React",
@@ -10,6 +11,7 @@
 
     },
     "Petition": {
+        "id": "2",
         "image" : "/bigProjectList/petition.png",
         "name" : "Tiny Foods",
         "tech" : "Express Handlebars & PSQL",
@@ -21,6 +23,7 @@
 
     },
     "SocialNetwork": {
+        "id": "3",
         "image" : "/bigProjectList/socialnetwork.png",
         "name" : "frenemy",
         "tech" : "React, Redux, Sockets & Aws3",
@@ -31,6 +34,7 @@
 
     },
     "ImageBoard": {
+        "id": "4",
         "image" : "/bigProjectList/imageboard.png",
         "name" : "Inspire",
         "tech" : "Vue & Aws3",
@@ -41,6 +45,7 @@
 
     },
     "Final": {
+        "id": "5",
         "image" : "/bigProjectList/final.png",
         "name" : "Super Spiced Bro",
         "tech" : "Phaser",

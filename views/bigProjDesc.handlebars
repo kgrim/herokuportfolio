@@ -1,0 +1,34 @@
+{{> navigation}}
+
+
+<div class="bottomDecoContainer"></div>
+
+<div class="topinfoContainer">
+
+    <div class="topDecoContainer">
+        <img src="{{tempBigProjList.image}}" alt="">
+    </div>
+
+    <div id="projectDescription">
+        <h3>{{tempBigProjList.name}}</h3></a>
+        <h4><u>Tech:</u> {{tempBigProjList.tech}}</h4>
+        <h4><u>Description:</u> {{tempBigProjList.desc}}</h4>
+        <div id="projectLinks">
+            {{#if tempBigProjList.web.codePen}}
+            <a href="{{tempBigProjList.web.codePen}}"target="_blank"> <img src="/codepen.png" alt="codePen"> </a>
+            {{/if}}
+            {{#if tempBigProjList.web.gitHub}}
+            <a href="{{tempBigProjList.web.github}}"target="_blank"> <img src="/github.png" alt="github"> </a>
+            {{/if}}
+            {{#if tempBigProjList.web.website}}
+            <a href="{{tempBigProjList.web.website}}"target="_blank"> <img src="/website.png" alt="website"> </a>
+            {{/if}}
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="/js/projectDesc.js" charset="utf-8"></script>

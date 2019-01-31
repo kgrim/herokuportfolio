@@ -5,17 +5,12 @@
 
 </div>
     <div class="main">
-        <div class="bigProjContainter">
-            <div class="bigProject">
-                <h1>{{> bigProjectList}}</h1>
-            </div>
-
-        </div>
         <div class="smallProjContainter">
             <div class="titleInstructions individualProject">
                 <h2>START</h2>
                 <p class="textChange"></p>
             </div>
+            {{> bigProjectList}}
             {{> projects}}
             <h2>END</h2>
         </div>

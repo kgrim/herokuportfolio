@@ -1,26 +1,28 @@
 {{> navigation}}
 
 <div class="bottomDecoContainer"></div>
+<div class="topinfoContainer">
+    <div class="topDecoContainer">
+        <a href="/{{tempProjList.i}}" target="_blank"><img src="/{{tempProjList.i}}/shot.png" alt="">
+    </div>
 
-<div id="projectDescription">
-        <h3>{{tempProjList.name}}</h3></a>
-        <h4><u>Tech:</u> {{tempProjList.tech}}</h4>
-        <h4><u>Description:</u> {{tempProjList.desc}}</h4>
+    <div id="projectDescription">
+            <h3>{{tempProjList.name}}</h3></a>
+            <h4><u>Tech:</u> {{tempProjList.tech}}</h4>
+            <h4><u>Description:</u> {{tempProjList.desc}}</h4>
+            <div id="projectLinks">
+                {{#if tempProjList.web.codePen}}
+                <a href="{{tempProjList.web.codePen}}"target="_blank"> <img src="/codepen.png" alt="codePen"> </a>
+                {{/if}}
+                {{#if tempProjList.web.gitHub}}
+                <a href="{{tempProjList.web.github}}"target="_blank"> <img src="/github.png" alt="github"> </a>
+                {{/if}}
+                {{#if tempProjList.web.website}}
+                <a href="{{tempProjList.web.website}}"target="_blank"> <img src="/website.png" alt="website"> </a>
+                {{/if}}
+            </div>
+    </div>
 </div>
 
-<div id="projectLinks">
-    {{#if tempProjList.web.codePen}}
-        <a href="{{tempProjList.web.codePen}}"target="_blank"> <img src="/codepen.png" alt="codePen"> </a>
-    {{/if}}
-    {{#if tempProjList.web.gitHub}}
-        <a href="{{tempProjList.web.github}}"target="_blank"> <img src="/github.png" alt="github"> </a>
-    {{/if}}
-    {{#if tempProjList.web.website}}
-    <a href="{{tempProjList.web.codePen}}"target="_blank"> <img src="/website.png" alt="website"> </a>
-    {{/if}}
-</div>
 
-<div class="topDecoContainer">
-    <a href="/{{tempProjList.i}}" target="_blank"><img src="/{{tempProjList.i}}/shot.png" alt="">
-</div>
 <script src="/js/projectDesc.js" charset="utf-8"></script>
