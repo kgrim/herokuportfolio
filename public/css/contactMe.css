@@ -32,6 +32,8 @@ body{
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
+  position: relative;
+  z-index: 5;
 }
 
 ul{
@@ -55,13 +57,14 @@ ul{
 
 .contact{
   background: linear-gradient(rgb(255, 255, 255) , rgb(255, 255, 255, .9) , rgb(255, 255, 255, .5));
+
 }
 
 
 .contact form label{
   display: block;
   margin-top: 10px;
-  font-size: 2rem;
+  font-size: 3vh;
   text-align: left;
 }
 
@@ -78,7 +81,9 @@ ul{
   border: none;
   border-bottom: 1px solid grey;
   background: transparent;
-  font-size: 3rem;
+  font-size: 3vh;
+  position: relative;
+  z-index: 20;
 }
 
 .contact form button{
