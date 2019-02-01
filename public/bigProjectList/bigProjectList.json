@@ -29,7 +29,8 @@
         "tech" : "React, Redux, Sockets & Aws3",
         "desc" : "there is a log-in/sign-up function in which the password is hashed and it would save the log-in in a cookie session. Once the user sign-up, they would be directed to their profile where they can add an image and edit the bio. Once the user log-in a notice is emitted to the other online users using sockets.io. Sockets are also used when the users disconnects and whenever the user has an updated in regards the friendship status (yes, even if someone declined a friend request or unfriend you -- villains like drama). The chat function will send an axios request to the server to get the latest 10 chats. The friendship button will change as soon as it is clicked and the database is updated accordingly. All the images have a click event. If you are clicking on your image, a pop-up modal will be displayed to change your image. If you are clicking on some other user image, it will direct you to their profile.",
         "web" : {
-            "gitHub" : "https://github.com/kgrim/portfolio/tree/master/socialnetwork"
+            "gitHub" : "https://github.com/kgrim/portfolio/tree/master/socialnetwork",
+            "website" : "https://frenemy.herokuapp.com/"
         }
 
     },
