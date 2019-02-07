@@ -4,6 +4,7 @@
         animation: fade-in .01s cubic-bezier(0.43, 0.26, 0.89, 1.04) both;
 
     }
+
     .skewDiv {
         position: absolute;
         background: linear-gradient(-148deg, rgba(103, 65, 9, 0.47), rgb(249, 155, 18));
@@ -45,7 +46,7 @@
         margin: auto;
         columns: 4;
         column-gap: 5px;
-
+        text-align: center;
     }
 
     .imageCollage img{
@@ -55,10 +56,6 @@
         break-inside: avoid;
         filter: grayscale(100%);
     }
-
-    /* .secondHalfSecond .imageCollage img {
-        width: 18vw;
-    } */
 
     .finalYear .imageCollage {
         width: 60vw;
@@ -161,36 +158,72 @@
 
     @media (min-width: 300px) and (max-width: 1024px) and (orientation: portrait) {
         body {
-            position: absolute;
+            margin:0;
+            margin-left: 1.5vw;
         }
 
         .imageCollage img{
-            width: 20vh;
+            width: 27vw;
+            margin: 0;
         }
         .imageCollage {
-            width: 100vw;
-            margin: auto;
-            columns: 3;
-            column-gap: 10px;
-
-        }
-        .finalYear .imageCollage {
-            width: 100vw;
-        }
-
-        #bigModal img {
-            width: 150vw;
-            margin: 0 auto;
+            width: 100%;
             padding: 0;
+            columns: 3;
+            column-gap: 0vw;
+
+        }
+
+        .firstHalfSecond .imageCollage {
+            margin: 0;
+        }
+        .secondHalfSecond .imageCollage {
+            left: 0;
+            width: 100%;
+        }
+
+
+        .finalYear .imageCollage{
+            width: 91%;
+            padding: 2vw;
+        }
+        #bigModal {
+            justify-content: flex-start;
+            top: -5vh;
+            margin-left: -2.5vh;
+        }
+        #bigModal img {
+            width: 80vw;
+            margin: 0 auto;
             margin-top: 15vh;
+            padding-left: 6vh;
         }
         #innerModal {
-            width: fit-content;
+            width: 100vw;
         }
         #close {
             position: relative;
             top: 2vh;
             text-align: center;
+        }
+
+
+
+        /* TEXT */
+        .projectInfo {
+            margin: 0 auto;
+        }
+        .firstHalfSecond .projectInfo {
+            top: -10vh;
+            left: 15vw;
+            width: 56vw;
+        }
+        .secondHalfSecond .projectInfo {
+            top: -15vh;
+        }
+        .firstYear .projectInfo {
+            top: -20vh;
+            margin-left: 5vw;
         }
     }
 
