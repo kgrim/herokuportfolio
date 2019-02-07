@@ -11,8 +11,6 @@ body {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    /* height: 100%;
-    width: 100%; */
 }
 
 #car img {

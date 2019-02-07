@@ -272,10 +272,6 @@ a {
 
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
-    /* * p {
-        font-size: 7vw;
-    } */
-
     .backgroundImageSlash2 {
         height: 80rem;
         width: 100rem;

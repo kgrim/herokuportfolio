@@ -1,0 +1,265 @@
+<style media="screen">
+    body {
+        background-image: url(/homeBackground.jpg);
+        animation: fade-in .01s cubic-bezier(0.43, 0.26, 0.89, 1.04) both;
+
+    }
+    .skewDiv {
+        position: absolute;
+        background: linear-gradient(-148deg, rgba(103, 65, 9, 0.47), rgb(249, 155, 18));
+        transform: rotate(-25deg);
+        height: 100vh;
+        width: 200vw;
+        left: -50vw;
+    }
+
+    .skewDiv2 {
+        position: fixed;
+        z-index: -1;
+        background: linear-gradient(-90deg, rgba(115, 63, 0, 0.73), rgba(255, 152, 0, 0.77));
+        transform: rotate(25deg);
+        height: 100vh;
+        width: 200vw;
+        top: 50vh;
+        left: -25vw;
+    }
+    .titleArts {
+        width: 100vw;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        padding: 1vh;
+        font-family: 'boldbold';
+        font-size: 5vh;
+        color: white;
+        text-shadow: -3px 3px 10px #844f00;
+    }
+    .finalYear {
+        margin-top: 32vh;
+        margin-bottom: 5vh;
+    }
+
+    .imageCollage {
+        width: 85vw;
+        margin: auto;
+        columns: 4;
+        column-gap: 5px;
+
+    }
+
+    .imageCollage img{
+        width: 100%;
+        margin: 0 0 2.5px;
+        overflow: hidden;
+        break-inside: avoid;
+        filter: grayscale(100%);
+    }
+
+    .finalYear .imageCollage {
+        width: 60vw;
+    }
+    .firstHalfSecond .imageCollage {
+        margin: 6vh 0;
+    }
+    .secondHalfsecond .imageCollage {
+        margin: 20vh 0;
+        position: relative;
+        left: 37vw;
+        column-count: 3;
+        width: 60vw;
+    }
+    .imageCollage img:hover {
+        transform: scale(1.1);
+        filter: grayscale(0%);
+    }
+
+    .desc {
+        display: none;
+    }
+
+    .isVisible {
+        display: block;
+        transition: none;
+    }
+    .isClicked {
+        position: absolute;
+        z-index: 50;
+        width: 50vw;
+
+    }
+
+    #bigModal {
+        background: rgb(255, 255, 255, 0.7);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-left: -1vw;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 50;
+        display: none;
+    }
+
+    #innerModal {
+        position: relative;
+        width: 100vw;
+    }
+
+    #bigModal img {
+        width: 90vh;
+        margin-left: 25vw;
+        filter: grayscale(0%);
+        padding: 5vh;
+    }
+    #close {
+        position: absolute;
+        top: 5vh;
+        right: 1vw;
+        font-size: 8vh;
+        z-index: 51;
+    }
+    #close:hover {
+        color: darkorange;
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+
+
+    /* TEXT */
+    .projectInfo p {
+        color: white;
+        font-size: 2.5vh;
+        background: linear-gradient(-90deg, rgba(115, 63, 0, 0.73), rgba(255, 152, 0, 0.77));
+        padding: .5vw;
+    }
+    .projectInfo {
+        position: relative;
+        width: 60vw;
+    }
+    .finalYear .projectInfo {
+        margin: 0 auto;
+    }
+    .firstHalfSecond .projectInfo {
+        width: 65vw;
+        left: 21.5vw;
+        top: -32vh;
+    }
+    .secondHalfsecond .projectInfo {
+        width: 55vw;
+        top: -42vh;
+    }
+    .firstYear .projectInfo {
+        width: 50vw;
+        left: 30vw;
+        top: -45vh;
+    }
+
+    @media (min-width: 300px) and (max-width: 1024px) and (orientation: portrait) {
+        body {
+            position: absolute;
+        }
+
+        .imageCollage img{
+            width: 20vh;
+        }
+        .imageCollage {
+            width: 100vw;
+            margin: auto;
+            columns: 3;
+            column-gap: 10px;
+
+        }
+        .finalYear .imageCollage {
+            width: 100vw;
+        }
+
+        #bigModal img {
+            width: 150vw;
+            margin: 0 auto;
+            padding: 0;
+            margin-top: 15vh;
+        }
+        #innerModal {
+            width: fit-content;
+        }
+        #close {
+            position: relative;
+            top: 2vh;
+            text-align: center;
+        }
+    }
+
+</style>
+
+{{> navigation}}
+
+<div class="skewDiv"></div>
+<div class="finalYear">
+    <h3 class="titleArts">Final Year</h3>
+    <div class="desc">
+        <div class="imageCollage">
+            {{#each finalYear}}
+            <img class="img{{@index}}" src= "/artsPortfolio/final/{{this}}" alt="">
+            {{/each}}
+        </div>
+        <div class="projectInfo">
+            <p>Glacier Abduction was the name of my final project. The inspiration came to me when I was helping out at an ice-cream store and I have accidentally left my water bottle in the freezer for too long.</p>
+            <p>I wanted to take a different approach to my usual for this project. My focus for construction is usually on 2D pattern cutting however I cannot portray what I see in ice using this method. I had to keep in mind that the body is 3D and proceeded by draping fabrics on the mannequin. I wanted the raw but contained feel for my garments the same way as the ice looks fluid inside but bound by the borders of its casing.</p>
+            <p>Like my construction, I decided to throw rigid rules (not the ones about safety) out the window and mix techniques plus use unusual tools. At the end I have gone for a texture print and a multi-layered screen print that was created using the continuous line technique to reflect my research.</p>
+        </div>
+    </div>
+</div>
+<div class="secondYear">
+    <h3 class="titleArts">Second Year</h3>
+    <div class="desc">
+        <div class="firstHalfSecond">
+            <div class="imageCollage">
+                {{#each firstHalfSecond}}
+                <img src= "/artsPortfolio/firstHalfSecond/{{this}}" alt="">
+                {{/each}}
+            </div>
+            <div class="projectInfo">
+                <p>This project was not only a group project but also a collaboration with <a href="http://www.missselfridge.com">Miss Selfridge.</a> During this project I had to research into competitors, find the customer profile, design, create and also the branding of the collection.</p>
+                <p>The theme was water and initially I have looked at possible was of constructing the same feeling however I came into realisation that the brand is more into texture and prints rather than super unique construction. For this reason I have started thinking more about textile manipulation.</p>
+                <p>My biggest inspiration came from my time in the water, specifically when I dive and look up to see the sunlight being reflected off the waves giving it the shine. This can be seen on the printed textile I have created.</p>
+                <p>In terms of construction, I opted to choose an angled seam as this is not used incredibly often. and as the top has a bare back I decided to go for a double collar displaying shiny satin contrasting with the faux leather. For the bottom half, I have gone for shorts with a layer of pleated tul to act like a skirt.</p>
+            </div>
+        </div>
+        <div class="secondHalfsecond">
+            <div class="imageCollage">
+                {{#each secondHalfsecond}}
+                <img src= "/artsPortfolio/secondHalfsecond/{{this}}" alt="">
+                {{/each}}
+            </div>
+            <div class="projectInfo">
+                <p>This time we chose our own inspiration. I like a good challenge and always was attracted to menswear. As I associate myself as more of a detail designer than extravagant shapes, this came no surprise to me.</p>
+                <p>Sports affects a big chunk of my personal life and I viewed people as machines, where you need to eat well and exercise in order to be your optimal self. I was incredibly excited for the textile research that I had to conduct and I knew it was not easy to find the best fabrics when you are building a prototype. Keeping this in mind I still was able to find fabrics with breathability, wicking properties and also waterproof. I have researched into nano technologies and if I had more time would be thinking into incorporating code to create smart jackets.</p>
+                <p>My research did not just stop at fabrics. I also looked into how the body exercise and even spoke to a sports physio to explain to me more about the human body. With this information I have proceeded to develop garments with cuts to help the body gain more from their exercise.</p>
+                <p>As the fabrics were limited, I only had one hue to choose from, which was white do I have hand dyed the pieces myself. I also developed prints taking inspiration from machines and cars to print them on garments for safety as reflectives.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="skewDiv2"></div>
+<div class="firstYear">
+    <h3 class="titleArts">First Year</h3>
+    <div class="desc">
+        <div class="imageCollage">
+            {{#each firstYear}}
+            <img src= "/artsPortfolio/firstYear/{{this}}" alt="">
+            {{/each}}
+        </div>
+        <div class="projectInfo">
+            <p>This was the initial year where I have learnt the basics of tailoring and textile studies.</p>
+            <p>The project of the year was called Super Volume and the inspiration was the skyscrapers and modern architecture like those of <a href="http://www.zaha-hadid.com/" target="_blank">Zaha Hadid.</a></p>
+            <p>My inspiration was from the <a href="http://www.thegherkinlondon.com/">Gherkin</a> situated in London. I really was found of the weaving and roundness effect it had. I was also inspired by it during evening times where you would see speck of lights in couple of the windows. This lead me to create a fun reversible jacket in which one can see the day with the light to dark shading and the night with the speck of lights reflected as highlighted embroidery at the bottom. The collar is high to represent the slight suffocation a big city like London might have and the shoulders are rounded mirroring the curvature of the building.</p>
+        </div>
+    </div>
+</div>
+
+
+<div id="bigModal">
+</div>
+
+<script src="/js/artsPortfolio.js" charset="utf-8"></script>
