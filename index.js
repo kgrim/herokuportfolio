@@ -5,7 +5,7 @@ const fs = require("fs");
 const list = fs.readdirSync(__dirname + "/projects");
 const finalYear = fs.readdirSync(__dirname + "/public/artsPortfolio/final");
 const firstHalfSecond = fs.readdirSync(__dirname + "/public/artsPortfolio/firstHalfSecond");
-const secondHalfsecond = fs.readdirSync(__dirname + "/public/artsPortfolio/secondHalfSecond");
+const secondHalfSecond = fs.readdirSync(__dirname + "/public/artsPortfolio/secondHalfSecond");
 const firstYear = fs.readdirSync(__dirname + "/public/artsPortfolio/firstYear");
 
 let secretEmail;
@@ -100,7 +100,7 @@ app.get("/artsPortfolio", (req, res) => {
             layout: "main",
             finalYear,
             firstHalfSecond,
-            secondHalfsecond,
+            secondHalfSecond,
             firstYear
         });
 });
