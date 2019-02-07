@@ -7,14 +7,6 @@ const finalYear = fs.readdirSync(__dirname + "/public/artsPortfolio/final");
 const firstHalfSecond = fs.readdirSync(__dirname + "/public/artsPortfolio/firstHalfSecond");
 const secondHalfsecond = fs.readdirSync(__dirname + "/public/artsPortfolio/secondHalfsecond");
 const firstYear = fs.readdirSync(__dirname + "/public/artsPortfolio/firstYear");
-// let innerArtsFiles;
-//
-// for (var i = 0; i < artsFiles.length; i++) {
-//     innerArtsFiles += fs.readdirSync(__dirname + "/public/artsPortfolio/" + artsFiles[i]);
-// }
-//
-// const nodemailer = require("nodemailer");
-// const path = require("path");
 
 let secretEmail;
 let secretPass;
