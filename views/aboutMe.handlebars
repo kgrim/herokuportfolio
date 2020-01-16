@@ -1,12 +1,13 @@
-<link rel="stylesheet" href="/css/contactMe.css">
+<link rel="stylesheet"
+    href="/css/contactMe.css">
 
 <style media="screen">
-
     body {
         overflow: scroll;
         padding: 0;
         margin: 0;
     }
+
     .navBar {
         right: 20px;
     }
@@ -23,7 +24,8 @@
         font-size: 2rem;
     }
 
-    .backgroundImageSlash, .backgroundImageSlashb {
+    .backgroundImageSlash,
+    .backgroundImageSlashb {
         width: 25vw;
         height: 100vh;
         background-image: url(/homeBackground.jpg);
@@ -40,7 +42,7 @@
     }
 
     .aboutMe {
-        width:60vw;
+        width: 60vw;
         background-position: top;
         padding: 1rem;
         border-radius: 3px;
@@ -53,11 +55,11 @@
 
     }
 
-    .aboutMe > p {
+    .aboutMe>p {
         font-size: 1.4rem;
     }
 
-    .aboutMeSection img{
+    .aboutMeSection img {
         position: fixed;
     }
 
@@ -85,7 +87,8 @@
         transform: scale(1.1);
     }
 
-    .backgroundFrame, .backgroundFrame2  {
+    .backgroundFrame,
+    .backgroundFrame2 {
         width: 200px;
         height: 200px;
         border: 2px solid rgb(236, 142, 19);
@@ -111,47 +114,48 @@
 
     #p1 {
         position: relative;
-        background: linear-gradient(rgb(255, 255, 255) , rgb(255, 255, 255, .9));
+        background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255, .9));
     }
 
     #p2 {
         position: relative;
-        background: linear-gradient( rgb(255, 255, 255, .9), rgb(255, 255, 255, .8) , rgb(255, 255, 255, .7));
+        background: linear-gradient(rgb(255, 255, 255, .9), rgb(255, 255, 255, .8), rgb(255, 255, 255, .7));
     }
 
     #p3 {
         position: relative;
-        background: linear-gradient(rgb(255, 255, 255, .7), rgb(255, 255, 255, .6) , rgb(255, 255, 255, .5));
+        background: linear-gradient(rgb(255, 255, 255, .7), rgb(255, 255, 255, .6), rgb(255, 255, 255, .5));
 
     }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
-    * p {
-        font-size: 1.1rem;
-    }
-    body {
-        padding-left : 10.5rem;
-    }
-    .aboutMe {
-        left: 1rem;
-        width: 80vw;
+    @media screen and (min-width: 320px) and (max-width: 1024px) {
+        * p {
+            font-size: 1.1rem;
+        }
 
+        body {
+            padding-left: 10.5rem;
+        }
+
+        .aboutMe {
+            left: 1rem;
+            width: 80vw;
+
+        }
+
+
+        .contact>* {
+            font-size: 5rem;
+        }
+
+        .contact label {
+            font-size: 3rem;
+        }
     }
-
-
-    .contact > * {
-        font-size: 5rem;
-    }
-
-    .contact label {
-        font-size: 3rem;
-    }
-}
-
 </style>
 
 
-    {{> navigation}}
+{{> navigation}}
 
 
 <h2 id="sentMsg">{{msg}}</h2>
@@ -177,18 +181,27 @@
     <div class="aboutMe">
         <h1>Hello, it's K!</h1>
 
-        <p id="p1">Every website has a vision and a mission however this is not always achieved. I am the person that can help you make this happen. How? As you can see from my profile I have both Design & Web Development background with a rich history in customer care & communication. This means that I would be able to develop a functioning website using Javascript yet still make it aesthetically pleasing by capturing the motive of the brand.</p>
+        <p id="p1">Every website has a vision and a mission however this is not always achieved. I am the person that
+            can help you make this happen. How? As you can see from my profile I have both Design & Web Development
+            background with a rich history in customer care & communication. This means that I would be able to develop
+            a functioning website using Javascript yet still make it aesthetically pleasing by capturing the motive of
+            the brand.</p>
 
-        <p id="p2">I'm a full stack web developer with expertise in HTML, CSS, Javascript and have experience using React, Redux, Vue, Node, Express, Handlebars, APIs, jQuery, Sockets and SQL. I also have used extensively CAD programs such as Photoshop & Illustrator.</p>
+        <p id="p2">I'm a full stack web developer with expertise in HTML, CSS, Javascript and have experience using
+            React, Redux, Vue, Node, Express, Handlebars, APIs, jQuery, Sockets and SQL. I also have used extensively
+            CAD programs such as Photoshop & Illustrator.</p>
 
-        <p id="p3"> Saying that, I consider myself as a quick learner and always am happy to learn new things. If you'd like to know more about me & my work, just click on the links that can be found on the left hand side or just get it touch by clicking on the @ icon!</p>
+        <p id="p3"> Saying that, I consider myself as a quick learner and always am happy to learn new things. If you'd
+            like to know more about me & my work, just click on the links that can be found on the left hand side or
+            just get it touch by clicking on the @ icon!</p>
     </div>
 
 </div>
 
-    {{> email }}
+{{> email }}
 
 <div class="backgroundImagehorizontal">
 </div>
 
-<script src="js/aboutMeScript.js" charset="utf-8"></script>
+<script src="js/aboutMeScript.js"
+    charset="utf-8"></script>

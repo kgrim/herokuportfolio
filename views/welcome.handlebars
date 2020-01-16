@@ -1,15 +1,32 @@
-<link rel="stylesheet" href="/css/welcome.css">
+<link rel="stylesheet"
+    href="/css/welcome.css">
 
-<div class="imgContainer"></div>
 
-    <div id="bigContainer">
-        <div id="helloTitle">
-            <p>HE</p>
-            <p>LLO.</p>
-        </div>
-        <div class="navIcons">
-            <a href="/aboutMe" title="About Me"> <img src="/aboutMe.png" alt=""> </a>
-            <a href="/projects" title="Conding"><img src="/projects.png" alt=""></a>
-            <a href="/artsPortfolio" title="Design"><img src="/sketch.png" alt=""></a>
-        </div>
+<div class="welcome__wrapper">
+    <img src="/helloBanner.png"
+        class="welcome__hello-image"
+        alt="hello banner">
+    <div class="welcome__info-box">
+        <p class="welcome__info-box-p">
+            Thank you for your visit! Before you proceed I would like to inform you that I am currently re-designing and
+            also code re-structuring the website. In the mean time can keep going to the <a href="/oldWebsite">old
+                website</a> as it still is informative.
+        </p>
+        <h4 class="welcome__info-box-h4">
+            Why am I changing the website?
+        </h4>
+        <p class="welcome__info-box-p">
+            The old website was built straight when the course has finished. For that time this was good. However around
+            a year has gone by since starting on the field and I have learned heaps about CSS, working in a team and
+            also about code complexity. I believe the old website does not reflect the skill and the work ethics I have
+            today so it is time for an upgrade! (cannot let apple have all the fun with the yearly upgrades)
+        </p>
+        <p class="welcome__info-box-p">
+            In the meantime, hope you'll find what you need and please do not hesitate to <a href="/aboutMe">contact
+                me</a>.
+        </p>
     </div>
+    <div class="welcome__links">
+        {{> contactLinks}}
+    </div>
+</div>

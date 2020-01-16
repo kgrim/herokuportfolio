@@ -1,0 +1,84 @@
+.imgContainer {
+  animation: bounce-in-top 1.1s both;
+  margin: 0;
+  background-image: url(/homeBackground.jpg);
+  overflow: scroll;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.navIcons {
+  height: fit-content;
+  width: min-content;
+  margin: auto;
+  display: inherit;
+  padding-top: 18vh;
+}
+
+.navIcons img {
+  transition: all 0.25s ease-in-out;
+  width: 20vh;
+  transform: translate(-2vw, -5vh);
+  animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+
+.navIcons img:hover {
+  transform: scale(1.2);
+  transition: all 0.25s ease-in-out;
+}
+
+#bigContainer {
+  border-top: 10px solid white;
+  background: transparent;
+  position: fixed;
+  top: 4.25vh;
+  left: 2vw;
+  width: 93vw;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#helloTitle {
+  animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  height: fit-content;
+  padding-top: 7vh;
+}
+
+#helloTitle p {
+  margin: 0;
+  font-family: "boldbold";
+  font-size: 27vw;
+  background: transparent;
+  color: white;
+  width: fit-content;
+}
+
+#helloTitle p:last-child {
+  font-size: 19vw;
+  position: relative;
+  letter-spacing: -20px;
+  width: fit-content;
+}
+
+@media (min-width: 300px) and (max-width: 1024px) and (orientation: portrait) {
+  #bigContainer {
+    flex-direction: column;
+  }
+  .navIcons {
+    display: contents;
+  }
+  #helloTitle p {
+    font-size: 40vw;
+  }
+
+  #helloTitle p:last-child {
+    font-size: 35vw;
+    letter-spacing: -20px;
+  }
+  .navIcons img {
+    width: 10vh;
+    transform: translate(0, -5vh);
+  }
+}
